@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/style.css">
     
   </head>
-  <body>
+  <body class="bg-dark">
   <!-- NAVBAR -->
     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top py-2 box-shadow">
         <div class="container">
@@ -23,6 +23,7 @@
                 </a>
         </div>
       
+    <!-- BUTTON MOBILE -->
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Abrir Navegação">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -30,13 +31,13 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
             <li class="nav-item px-2">
-                <a class="nav-link" href="planos.html">Sobre</a>
+                <a class="nav-link" href="#sobre">Sobre</a>
               </li>
           <li class="nav-item px-2">
-            <a class="nav-link" href="planos.html">Treinos</a>
+            <a class="nav-link" href="#treinos">Treinos</a>
           </li>
           <li class="nav-item px-2">
-            <a class="nav-link" href="planos.html">Planos</a>
+            <a class="nav-link" href="#planos">Planos</a>
           </li>
           <li class="nav-item px-2">
             <a class="btn btn-outline-warning ml-md-2" href="inscricao.html">Contato</a>
@@ -56,7 +57,7 @@
               <h1 class="text-secondary font-weight-bold">Alcance seu melhor condicionamento</h1>
               <p class="lead text-muted p-2">Treinos específico para alcançar os seus objetivos</p>
               <p>
-                <a href="#" class="btn btn-warning my-2">Escolha seu plano</a>
+                <a href="#planos" class="btn btn-warning my-2">Escolha seu plano</a>
               </p>
             </div>
             <hr class="bg-warning">
@@ -65,9 +66,8 @@
 
     <!-- SECTION PERSONAL -->
 
-    <section class="container-fluid">
-      <div class="row bg-dark text-white">
-       
+    <section id="sobre" class="container-fluid" >
+      <div class="row bg-dark text-white">    
             <div class="col-lg-5 p-3 align-self-center">
                 <h1 class="display-4 font-weight-bold text-warning py-3">CONHEÇA O SEU PERSONAL TRAINER</h1>
                 <p class="lead text-justify">Eu sou Matheus Lucena, e estou aqui para guiá-lo rumo ao seu melhor condicionamento físico. Com anos de experiência em treinamento e uma paixão por ajudar as pessoas a alcançarem seus objetivos, estou determinado a tornar sua jornada de condicionamento físico emocionante, desafiadora e, acima de tudo, eficaz</p>
@@ -82,35 +82,61 @@
     
 
     <!-- SECTION PLANOS -->
-    <section class="pricing-header px-3 py-3 pb-md-4 mx-auto text-center">
-        <h2 class="display-4 py-3 font-weight-normal">Conheça nossos planos</h2>
+    <!-- <section class="pricing-header px-3 py-3 pb-md-4 mx-auto text-center bg-dark">
+        <h2 class="display-4 py-3 font-weight-bold text-warning">Conheça nossos planos</h2>
             <div class="container d-flex">
                 <div class="col-md-6">
-                    <div class="card h-100" style="width: 18rem;">
-                        <img src="./img/card1.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Acompanhamento Presencial</h5>
-                            <p class="card-text">Treino e acompanhamento personalizado</p>
-                            <a href="#" class="btn btn-warning">Conheça</a>
+                    <div class="card h-100 bg-dark" style="width: 18rem;">
+                            <a href="#" class="text-secondary">
+                                <img src="./img/card1.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                <h5 class="card-title font-weight-bold text-warning">Acompanhamento Presencial</h5>
+                                <p class="card-text text-secondary">Treino e acompanhamento personalizado</p>
+                            </a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="card h-100" style="width: 18rem;">
-                        <img src="./img/card2.jpg" class="card-img-top" alt="...">
+                        <a href="">
+                            <img src="./img/card2.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Consultoria Online</h5>
+                                <p class="card-text">Acompanhamento online através do aplicativo "Mfit"</p>
+
+                            </div>
+                        </a>
+                        
+                    </div>
+                </div>
+            </div>
+    </section> -->
+
+    <!-- test cards -->
+     <div id="planos" class="container mw-100 py-5 bg-dark">
+         <div class="row">
+             <div class="col-sm-6">
+                 <div class="card bg-secondary">
+                     <div class="card-body">
+                         <h5 class="card-title font-weight-bold">Acompanhamento Presencial</h5>
+                         <p class="card-text">Treino e acompanhamento personalizado</p>
+                         <a href="https://www.whatsapp.com/?lang=pt_BR" target="_blank" class="btn btn-warning">Conheça</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title">Consultoria Online</h5>
+                            <h5 class="card-title font-weight-bold">Consultoria Online</h5>
                             <p class="card-text">Acompanhamento online através do aplicativo "Mfit"</p>
                             <a href="#" class="btn btn-warning">Conheça</a>
                         </div>
                     </div>
                 </div>
             </div>
-            <h3 class="py-3 font-weight-normal">
-                Independentemente da sua escolha, estamos aqui para ajudá-lo a alcançar o melhor de si mesmo. Descubra o método que melhor se adapta ao seu estilo de vida e embarque nesta jornada de transformação pessoal conosco.
-            </h3>
-    </section>
-
+        </div>
+    <!-- end test cards -->
+            
     <section class="jumbotron mb-0 rounded-0 text-center bg-dark py-5">
         <hr class="bg-warning">
         <div class="container p-2 py-5">
